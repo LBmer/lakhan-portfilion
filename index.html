@@ -127,6 +127,13 @@ header>div:last-child a:not(.hire){display:none}
 @keyframes nudge{50%{transform:translateY(5px)}}
 #pn small{font-size:10px;color:var(--mut);text-align:center;letter-spacing:.1em}
 @media(max-width:800px){#pn{right:12px}#pn button{width:48px;height:48px}}
+#pn.start .nx{background:var(--acc);color:#000;border-color:var(--acc);animation:nudge 1.6s ease-in-out infinite,glow 1.6s infinite}
+#pn.start .pv{opacity:.35}
+@keyframes glow{0%{box-shadow:0 0 0 0 #ff7a1aaa}70%{box-shadow:0 0 0 16px #ff7a1a00}}
+#hint{position:fixed;left:50%;bottom:50%;transform:translate(-50%,50%);z-index:35;background:#000c;backdrop-filter:blur(14px);border:1px solid var(--acc);border-radius:20px;padding:22px 26px;text-align:center;font-size:15px;line-height:1.6;transition:opacity .5s;max-width:80vw}
+#hint b{color:var(--acc)}#hint.off{opacity:0;pointer-events:none}
+#hint .hand{font-size:40px;display:block;animation:pinch 1.4s ease-in-out infinite}
+@keyframes pinch{50%{transform:scale(1.3)}}
 </style></head><body>
 
 <header>
@@ -163,6 +170,7 @@ header>div:last-child a:not(.hire){display:none}
  <div class="cta"><a class="wa" target="_blank" href="https://wa.me/919624265254?text=Hi%20Lakhan%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20a%20project">WhatsApp · +91 96242 65254</a><a class="ml" href="mailto:lakhanp122e@gmail.com">lakhanp122e@gmail.com</a><a class="ml" target="_blank" href="https://www.instagram.com/lbmer21/">Instagram ↗</a></div>
  <p style="color:var(--mut);margin-top:60px;font-size:13px">© 2026 LB Edits — Lakhan</p>
 </section>
+<div id="hint" class="off"><span class="hand">🤏</span><b>Pinch</b> to zoom into projects<br>or tap <b>↓ NEXT</b> / swipe up<br><small style="color:var(--mut)">tap anywhere to start</small></div>
 <div id="pn"><button class="pv" aria-label="Previous project">↑</button><small>PREV</small><small>NEXT</small><button class="nx" aria-label="Next project">↓</button></div>
 <div id="spacer"></div>
 <nav id="filters"></nav>
@@ -273,7 +281,7 @@ function frame(){
  dots.forEach(o=>{let z=o.p[2]+cam;o.d.style.transform=`translate3d(${o.p[0]+ox*.5+Math.cos(t+o.p[2])*20}px,${o.p[1]+oy*.5+Math.sin(t*.8+o.p[0])*25}px,${z}px) rotate(${t*40+o.p[1]}deg)`;o.d.style.display=z>800?'none':'block'});
  const idx=Math.round(cam/GAP)-1;
  hero.style.opacity=Math.max(0,1-cam/500);
- const endOn=cam>GAP*(LIST.length+.7);$('end').classList.toggle('on',endOn);const show=cam>GAP*.5&&!endOn;info.style.opacity=cnt.style.opacity=show?1:0;$('pn').classList.toggle('on',show);
+ const endOn=cam>GAP*(LIST.length+.7);$('end').classList.toggle('on',endOn);const show=cam>GAP*.5&&!endOn;info.style.opacity=cnt.style.opacity=show?1:0;$('pn').classList.toggle('on',!endOn);$('pn').classList.toggle('start',cam<GAP*.5);
  if(idx!==last&&idx>=0&&idx<LIST.length){last=idx;info.classList.remove('flash');void info.offsetWidth;info.classList.add('flash');cards.forEach((c,j)=>c.el.classList.toggle('focus',j==idx));if(cam>GAP*.5){whoosh();setTimeout(()=>stars(cards[idx].el),150)}num.textContent=String(idx+1).padStart(3,'0');ttl.textContent=LIST[idx].t;cat.textContent=LIST[idx].cl+' · '+LIST[idx].c}
  requestAnimationFrame(frame);
 }
@@ -283,6 +291,9 @@ function openM(p){ting();if(p.ig){open(p.ig,'_blank','noopener');return}
  mmedia.innerHTML=`<div class="vid ${p.s?'sh':''}"><iframe src="https://www.youtube.com/embed/${p.y}?autoplay=1&rel=0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe></div>`;
  mt.textContent=p.t;mc.innerHTML=`${p.cl} · ${p.c}${p.v?' · <b style=color:var(--acc)>'+p.v+'</b>':''} · <a href="https://youtu.be/${p.y}" target="_blank" style=color:#fff>YouTube par dekho ↗</a>`;modal.classList.add('on')}
 function closeM(){modal.classList.remove('on');mmedia.innerHTML=''}
+// phone par pehli baar ek chhota hint
+if(matchMedia('(pointer:coarse)').matches){setTimeout(()=>$('hint').classList.remove('off'),1800);
+ const hide=()=>$('hint').classList.add('off');addEventListener('touchstart',hide,{once:true,passive:true});setTimeout(hide,7000)}
 // next / previous project buttons
 function jump(d){const st=(document.body.scrollHeight-innerHeight)/(LIST.length+1.2);const cur=Math.round(scrollY/st);scrollTo({top:Math.max(0,cur+d)*st,behavior:'smooth'})}
 document.querySelector('#pn .nx').onclick=()=>jump(1);document.querySelector('#pn .pv').onclick=()=>jump(-1);
