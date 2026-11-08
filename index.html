@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>LB Edits — Anime Motion Portfolio</title>
+<title>LB Edits — Lakhan | Video Editor Portfolio</title>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -134,17 +134,30 @@ header>div:last-child a:not(.hire){display:none}
 #hint b{color:var(--acc)}#hint.off{opacity:0;pointer-events:none}
 #hint .hand{font-size:40px;display:block;animation:pinch 1.4s ease-in-out infinite}
 @keyframes pinch{50%{transform:scale(1.3)}}
+#cm{position:fixed;top:80px;right:40px;z-index:60;width:300px;padding:18px;border-radius:20px;background:#0d0d14ee;backdrop-filter:blur(18px);border:1px solid #ff7a1a66;box-shadow:0 20px 60px #000a,0 0 40px #ff7a1a33;opacity:0;visibility:hidden;transform:translateY(-10px);transition:.3s}
+#cm.on{opacity:1;visibility:visible;transform:none}
+#cm>b{font-size:28px;display:block;margin-bottom:10px}
+#cm a{display:flex;gap:12px;align-items:center;padding:10px;border-radius:12px;color:#fff;text-decoration:none;transition:.2s}
+#cm a:hover{background:#ffffff12}
+#cm span{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-size:18px;flex:0 0 auto;color:#fff}
+#cm small{display:block;color:var(--mut);font-size:12px}
+@media(max-width:800px){#cm{right:12px;left:12px;width:auto;top:70px}}
 </style></head><body>
 
 <header>
  <div class="logo"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="29" fill="none" stroke="#ff7a1a" stroke-width="2"/><circle cx="32" cy="32" r="22" fill="none" stroke="#2f7bff" stroke-width="1" stroke-dasharray="3 5"/><path d="M18 16v32h12" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 16h7a7 7 0 010 14h-7 8a8 8 0 010 16h-8z" fill="none" stroke="#fff" stroke-width="4.5" stroke-linejoin="round"/><path d="M40 8l-6 22h8l-8 26" fill="none" stroke="#ffd60a" stroke-width="2" opacity=".9"/></svg></div>
  <div><small>Currently:</small>Video Editor · Content Strategist · Retention Specialist</div>
  <div><small>Based in:</small>India (<span id="clock"></span>)</div>
- <div><small>Navigation:</small><a href="#" onclick="return go(1)">Work</a><a href="#" onclick="return go(0)">Home</a><a href="mailto:lakhanp122e@gmail.com">Contact</a><a href="https://www.instagram.com/lbmer21/" target="_blank">Instagram</a><br><a class="hire" href="https://wa.me/919624265254" target="_blank">Hire me ↗</a></div>
+ <div><small>Navigation:</small><a href="#" onclick="return go(1)">Work</a><a href="#" onclick="return go(0)">Home</a><a href="#" id="ctl">Contact ▾</a><a href="https://www.instagram.com/lbmer21/" target="_blank">Instagram</a><br><a class="hire" href="https://wa.me/919624265254" target="_blank">Hire me ↗</a></div>
 </header>
 
+<div id="cm"><b class="serif">Let's talk</b>
+ <a target="_blank" href="https://wa.me/919624265254?text=Hi%20Lakhan%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20a%20project"><span style="background:#25d366">✆</span><div>WhatsApp / Call<small>+91 96242 65254</small></div></a>
+ <a target="_blank" href="https://www.instagram.com/lbmer21/"><span style="background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045)">◎</span><div>Instagram<small>@lbmer21</small></div></a>
+ <a href="mailto:lakhanp122e@gmail.com"><span style="background:var(--acc2)">✉</span><div>Email<small>lakhanp122e@gmail.com</small></div></a>
+</div>
 <div id="loader"><div class="ring"></div><b class="serif" id="pct">0%</b><small>POWERING UP</small></div>
-<button id="snd"><span class="eq"><i></i><i></i><i></i></span><b id="sndt" style="font-weight:400">Sound on</b></button>
+<button id="snd"><span class="eq"><i></i><i></i><i></i></span><b id="sndt" style="font-weight:400">Sound: OFF</b></button>
 <a id="fab" target="_blank" href="https://wa.me/919624265254?text=Hi%20Lakhan%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20a%20project"><svg width="22" height="22" viewBox="0 0 24 24" fill="#000"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg><span>Hire me on WhatsApp</span></a>
 <div id="bar"></div><div id="cur"></div>
 <div id="stage"><div id="world"></div></div>
@@ -237,13 +250,13 @@ $('tests').innerHTML=TESTIMONIALS.map(x=>`<div class="glass">${x.img?`<img src="
 (()=>{let p=0;const iv=setInterval(()=>{p=Math.min(100,p+Math.ceil(Math.random()*9));$('pct').textContent=p+'%';if(p>=100){clearInterval(iv);setTimeout(()=>$('loader').classList.add('done'),250)}},45)})();
 // sound (Web Audio, koi file nahi chahiye)
 let AC=null,SND=false;
-function setSnd(v){SND=v;if(!AC)AC=new (window.AudioContext||window.webkitAudioContext)();AC.resume();$('snd').classList.toggle('on',v);$('sndt').textContent=v?'Sound: ON':'Sound on';if(v)ting()}
+function setSnd(v){SND=v;if(!AC)AC=new (window.AudioContext||window.webkitAudioContext)();AC.resume();$('snd').classList.toggle('on',v);$('sndt').textContent=v?'Sound: ON':'Sound: OFF';if(v)ting()}
 $('snd').onclick=e=>{e.stopPropagation();setSnd(!SND)};
 addEventListener('pointerdown',function f(){if(!AC)setSnd(true);removeEventListener('pointerdown',f)},{once:true});
-function blip(){if(!SND)return;const o=AC.createOscillator(),g=AC.createGain();o.type='triangle';o.frequency.setValueAtTime(600,AC.currentTime);o.frequency.exponentialRampToValueAtTime(1200,AC.currentTime+.08);g.gain.setValueAtTime(.06,AC.currentTime);g.gain.exponentialRampToValueAtTime(.001,AC.currentTime+.15);o.connect(g).connect(AC.destination);o.start();o.stop(AC.currentTime+.15)}
+function blip(){if(!SND)return;const o=AC.createOscillator(),g=AC.createGain();o.type='triangle';o.frequency.setValueAtTime(600,AC.currentTime);o.frequency.exponentialRampToValueAtTime(1200,AC.currentTime+.08);g.gain.setValueAtTime(.015,AC.currentTime);g.gain.exponentialRampToValueAtTime(.001,AC.currentTime+.15);o.connect(g).connect(AC.destination);o.start();o.stop(AC.currentTime+.15)}
 function whoosh(){if(!SND)return;const d=.5,b=AC.createBuffer(1,AC.sampleRate*d,AC.sampleRate),c=b.getChannelData(0);for(let i=0;i<c.length;i++)c[i]=(Math.random()*2-1)*Math.sin(Math.PI*i/c.length);
- const s=AC.createBufferSource(),f=AC.createBiquadFilter(),g=AC.createGain();s.buffer=b;f.type='bandpass';f.frequency.setValueAtTime(300,AC.currentTime);f.frequency.exponentialRampToValueAtTime(3000,AC.currentTime+d);g.gain.value=.25;s.connect(f).connect(g).connect(AC.destination);s.start()}
-function ting(){if(!SND)return;[880,1320].forEach((fr,i)=>{const o=AC.createOscillator(),g=AC.createGain();o.frequency.value=fr;g.gain.setValueAtTime(.12,AC.currentTime+i*.06);g.gain.exponentialRampToValueAtTime(.001,AC.currentTime+i*.06+.5);o.connect(g).connect(AC.destination);o.start(AC.currentTime+i*.06);o.stop(AC.currentTime+i*.06+.5)})}
+ const s=AC.createBufferSource(),f=AC.createBiquadFilter(),g=AC.createGain();s.buffer=b;f.type='bandpass';f.frequency.setValueAtTime(300,AC.currentTime);f.frequency.exponentialRampToValueAtTime(1800,AC.currentTime+d);g.gain.value=.05;s.connect(f).connect(g).connect(AC.destination);s.start()}
+function ting(){if(!SND)return;[880,1320].forEach((fr,i)=>{const o=AC.createOscillator(),g=AC.createGain();o.frequency.value=fr;g.gain.setValueAtTime(.035,AC.currentTime+i*.06);g.gain.exponentialRampToValueAtTime(.001,AC.currentTime+i*.06+.5);o.connect(g).connect(AC.destination);o.start(AC.currentTime+i*.06);o.stop(AC.currentTime+i*.06+.5)})}
 function stars(el){const r=el.getBoundingClientRect();for(let i=0;i<14;i++){const s=document.createElement('span');s.className='star';s.textContent=i%3?'✦':'★';
  s.style.left=r.left+Math.random()*r.width+'px';s.style.top=r.top+Math.random()*r.height+'px';s.style.fontSize=8+Math.random()*16+'px';
  s.style.setProperty('--dx',(Math.random()-.5)*120+'px');s.style.setProperty('--dy',(Math.random()-.5)*120+'px');document.body.appendChild(s);setTimeout(()=>s.remove(),1300)}}
@@ -289,11 +302,15 @@ frame();
 function go(i){const max=document.body.scrollHeight-innerHeight;scrollTo({top:i?max/(LIST.length+1.2):0,behavior:'smooth'});return false}
 function openM(p){ting();if(p.ig){open(p.ig,'_blank','noopener');return}
  mmedia.innerHTML=`<div class="vid ${p.s?'sh':''}"><iframe src="https://www.youtube.com/embed/${p.y}?autoplay=1&rel=0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe></div>`;
- mt.textContent=p.t;mc.innerHTML=`${p.cl} · ${p.c}${p.v?' · <b style=color:var(--acc)>'+p.v+'</b>':''} · <a href="https://youtu.be/${p.y}" target="_blank" style=color:#fff>YouTube par dekho ↗</a>`;modal.classList.add('on')}
+ mt.textContent=p.t;mc.innerHTML=`${p.cl} · ${p.c}${p.v?' · <b style=color:var(--acc)>'+p.v+'</b>':''} · <a href="https://youtu.be/${p.y}" target="_blank" style=color:#fff>Watch on YouTube ↗</a>`;modal.classList.add('on')}
 function closeM(){modal.classList.remove('on');mmedia.innerHTML=''}
 // phone par pehli baar ek chhota hint
 if(matchMedia('(pointer:coarse)').matches){setTimeout(()=>$('hint').classList.remove('off'),1800);
  const hide=()=>$('hint').classList.add('off');addEventListener('touchstart',hide,{once:true,passive:true});setTimeout(hide,7000)}
+// contact menu: WhatsApp, Instagram, Email
+const openCM=e=>{e.preventDefault();e.stopPropagation();$('cm').classList.toggle('on');ting()};
+$('ctl').onclick=openCM;document.querySelector('.hire').onclick=openCM;
+addEventListener('click',e=>{if(!$('cm').contains(e.target))$('cm').classList.remove('on')});
 // next / previous project buttons
 function jump(d){const st=(document.body.scrollHeight-innerHeight)/(LIST.length+1.2);const cur=Math.round(scrollY/st);scrollTo({top:Math.max(0,cur+d)*st,behavior:'smooth'})}
 document.querySelector('#pn .nx').onclick=()=>jump(1);document.querySelector('#pn .pv').onclick=()=>jump(-1);
