@@ -1,311 +1,264 @@
 <!DOCTYPE html>
-<!-- saved from url=(0115)file:///Users/onlymec/Documents/Codex/2026-06-10/can-u-make-protfoloyo-for-me/outputs/lb-edits-portfolio/index.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lakhan | LB Edits - Video Editing Portfolio</title>
-    <meta name="description" content="Lakhan (LB Edits) video editing portfolio for retention editing, content strategy, podcasts, reels, shorts, and YouTube content.">
-    <link rel="stylesheet" href="./Lakhan _ LB Edits - Video Editing Portfolio_files/styles.css">
-  </head>
-  <body>
-    <div class="cursor-glow" aria-hidden="true" style="--x: 1550.08203125px; --y: 384.0078125px;"></div>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LB Edits — Anime Motion Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#07070a;--fg:#f2f2f2;--mut:#8a8a92;--acc:#ff7a1a;--acc2:#2f7bff}
+html,body{background:var(--bg);color:var(--fg);font-family:Inter,sans-serif;overflow-x:hidden}
+.serif{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400}
+header{position:fixed;inset:0 0 auto 0;display:grid;grid-template-columns:1fr 1fr 1fr 1fr;padding:28px 40px;z-index:20;font-size:14px;background:linear-gradient(#07070acc,transparent)}
+header small{display:block;color:var(--mut)}header a{color:var(--fg);text-decoration:none;margin-right:6px}
+header a:hover{text-decoration:underline}
+.logo{font-size:38px;line-height:1}
+#stage{position:fixed;inset:0;perspective:900px;overflow:hidden}
+#world{position:absolute;left:50%;top:50%;transform-style:preserve-3d}
+.card{position:absolute;border-radius:10px;overflow:hidden;cursor:pointer;transform-style:preserve-3d;background:#15151c;box-shadow:0 20px 60px #0008;transition:filter .3s}
+.card img,.card video{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}
+.card:hover{filter:brightness(1.2)}
+.dot{position:absolute;width:6px;height:6px;border-radius:1px}
+#hero{position:fixed;inset:0;z-index:10;pointer-events:none;transition:opacity .4s}
+#hero p{position:absolute;left:40px;bottom:30vh;max-width:560px;font-size:22px;line-height:1.45;font-weight:300}
+#hero p b{color:var(--acc);font-weight:400}
+#hero h1{position:absolute;left:30px;bottom:-2vw;font-size:17vw;line-height:.9;white-space:nowrap;letter-spacing:-.02em}
+#hero h1 span{color:var(--acc)}
+.btn{position:absolute;right:40px;bottom:30vh;pointer-events:auto;border:1px solid #fff5;border-radius:40px;padding:16px 26px;color:var(--fg);background:none;font:inherit;font-size:17px;cursor:pointer}
+.btn:hover{background:#fff;color:#000}
+#info{position:fixed;left:40px;bottom:30px;z-index:15;display:flex;align-items:flex-end;gap:16px;opacity:0;transition:opacity .4s}
+#num{font-size:110px;line-height:.8}#ttl{font-size:42px}#cat{color:var(--mut);font-size:15px;margin-top:6px}
+#count{position:fixed;right:40px;bottom:36px;z-index:15;display:flex;gap:18px;align-items:center;color:var(--mut);opacity:0;transition:opacity .4s}
+#count button{background:#fff;color:#000;border:0;border-radius:30px;padding:14px 22px;font:inherit;cursor:pointer}
+#spacer{height:1200vh}
+#modal{position:fixed;inset:0;z-index:50;background:#000d;backdrop-filter:blur(14px);display:none;place-items:center;padding:40px}
+#modal.on{display:grid}
+#modal .box{max-width:1100px;width:100%}
+#modal img,#modal video{width:100%;max-height:72vh;object-fit:contain;border-radius:12px}
+#modal h2{font-size:56px;margin-top:14px}#modal p{color:var(--mut)}
+#modal .x{position:absolute;top:24px;right:30px;font-size:32px;background:none;border:0;color:#fff;cursor:pointer}
+.btn .ar{display:inline-block;animation:bob 1.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(6px)}}
+#hero h1,#hero p,.btn{animation:rise 1.2s cubic-bezier(.2,.8,.2,1) both}
+#hero p{animation-delay:.3s}.btn{animation-delay:.5s}
+@keyframes rise{from{opacity:0;transform:translateY(60px);filter:blur(10px)}}
+#hero h1 span{background:linear-gradient(90deg,#ff7a1a,#ffd60a,#2f7bff,#ff7a1a);background-size:300%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:flow 6s linear infinite}
+@keyframes flow{to{background-position:300%}}
+.card:hover{box-shadow:0 0 0 2px var(--acc),0 0 60px #ff7a1a88}
+#cur{position:fixed;width:300px;height:300px;border-radius:50%;pointer-events:none;z-index:5;background:radial-gradient(circle,#ff7a1a22,transparent 70%);transform:translate(-50%,-50%)}
+#bar{position:fixed;left:0;top:0;height:3px;z-index:30;background:linear-gradient(90deg,var(--acc),var(--acc2));width:0}
+#info.flash #num{animation:pop .5s}
+@keyframes pop{from{opacity:0;transform:translateY(30px)}}
+#filters{position:fixed;top:92px;left:50%;transform:translateX(-50%);z-index:25;display:flex;gap:8px;flex-wrap:wrap;justify-content:center;max-width:92vw}
+#filters button{background:#ffffff10;backdrop-filter:blur(10px);border:1px solid #fff2;color:var(--fg);border-radius:30px;padding:7px 14px;font:inherit;font-size:12px;cursor:pointer;transition:.25s}
+#filters button:hover,#filters button.on{background:var(--acc);border-color:var(--acc);color:#000}
+.card{border:1px solid #ffffff22}
+.cap{position:absolute;left:0;right:0;bottom:0;padding:40px 16px 14px;background:linear-gradient(transparent,#000d);font-size:15px;line-height:1.3}
+.cap small{display:block;color:var(--acc);font-size:11px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
+.badge{position:absolute;top:12px;left:12px;background:var(--acc);color:#000;padding:5px 11px;border-radius:20px;font-size:12px}
+.play{position:absolute;top:12px;right:12px;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:#ffffff22;backdrop-filter:blur(8px);border:1px solid #fff4;transition:.3s}
+.card:hover .play{background:var(--acc);color:#000;transform:scale(1.15)}
+.igt{width:100%;height:100%;display:grid;place-content:center;text-align:center;background:linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045);font-size:18px}
+.igt span{font-size:48px}
+.vid{position:relative;aspect-ratio:16/9;max-height:72vh;margin:auto}.vid.sh{aspect-ratio:9/16;height:72vh}
+.vid iframe{width:100%;height:100%;border:0;border-radius:12px}
+#modal p{margin-top:6px}
+#loader{position:fixed;inset:0;z-index:100;background:#07070a;display:grid;place-content:center;text-align:center;transition:opacity .6s,visibility .6s}
+#loader.done{opacity:0;visibility:hidden}
+#loader .ring{width:140px;height:140px;margin:0 auto 24px;border-radius:50%;border:2px solid #ffffff15;border-top-color:var(--acc);border-right-color:var(--acc2);animation:spin 1s linear infinite;box-shadow:0 0 40px #ff7a1a55}
+@keyframes spin{to{transform:rotate(360deg)}}
+#loader b{font-size:64px;display:block}#loader small{letter-spacing:.4em;color:var(--mut);font-size:11px}
+.logo svg{width:64px;height:64px;animation:lg 4s ease-in-out infinite;filter:drop-shadow(0 0 8px #ff7a1a88)}
+.card.focus{box-shadow:0 0 0 1px #fff6,0 0 50px #ff7a1a99,0 0 120px #2f7bff55;backdrop-filter:blur(6px)}
+.card.focus::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(115deg,transparent 30%,#ffffff40 50%,transparent 70%);background-size:250%;animation:shine 2.5s ease-in-out infinite}
+@keyframes shine{from{background-position:150%}to{background-position:-100%}}
+.star{position:fixed;z-index:12;pointer-events:none;color:#fff;text-shadow:0 0 10px var(--acc),0 0 20px var(--acc2);animation:twk 1.2s ease-out forwards}
+@keyframes twk{from{opacity:1;transform:scale(.3)}60%{opacity:1}to{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1.4) rotate(180deg)}}
+@keyframes lg{50%{filter:drop-shadow(0 0 18px #ff7a1a) drop-shadow(0 0 30px #2f7bff88)}}
+#snd{position:fixed;left:40px;top:150px;z-index:26;background:#ffffff12;backdrop-filter:blur(10px);border:1px solid #fff3;border-radius:30px;padding:9px 16px;color:#fff;font:inherit;font-size:13px;cursor:pointer}
+#snd.on{background:var(--acc);color:#000;border-color:var(--acc)}
+#snd .eq{display:inline-flex;gap:2px;margin-right:6px;vertical-align:middle}#snd .eq i{width:3px;height:10px;background:currentColor;border-radius:2px}
+#snd.on .eq i{animation:eq .6s ease-in-out infinite alternate}#snd.on .eq i:nth-child(2){animation-delay:.2s}#snd.on .eq i:nth-child(3){animation-delay:.4s}
+@keyframes eq{from{transform:scaleY(.3)}}
+#fab{position:fixed;right:40px;bottom:110px;z-index:40;display:flex;align-items:center;gap:10px;background:#25d366;color:#000;text-decoration:none;font-weight:500;padding:14px 22px;border-radius:40px;box-shadow:0 0 0 0 #25d36699;animation:pulse 2s infinite}
+#fab:hover{transform:scale(1.06)}
+@keyframes pulse{70%{box-shadow:0 0 0 18px #25d36600}100%{box-shadow:0 0 0 0 #25d36600}}
+.hire{display:inline-block;margin-top:6px;background:var(--acc);color:#000!important;padding:6px 14px;border-radius:20px;font-weight:500;text-decoration:none!important}
+@media(max-width:800px){#fab{right:16px;bottom:90px;padding:12px 16px}#fab span{display:none}#snd{left:16px;top:auto;bottom:160px}#count{right:16px}}
+#end{position:fixed;inset:0;z-index:18;overflow:auto;padding:120px 6vw 60px;background:#07070acc;backdrop-filter:blur(18px);opacity:0;visibility:hidden;transition:.6s}
+#end.on{opacity:1;visibility:visible}
+#end h2{font-size:clamp(48px,8vw,120px);line-height:.95}
+#end h2 span{color:var(--acc)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:40px 0 60px}
+.glass{background:#ffffff0c;border:1px solid #ffffff22;border-radius:18px;padding:24px;backdrop-filter:blur(14px);box-shadow:inset 0 1px #ffffff22}
+.stats b{font-family:'Instrument Serif',serif;font-style:italic;font-size:56px;font-weight:400;color:var(--acc);display:block;line-height:1}
+.stats small{color:var(--mut)}
+.tests{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-bottom:60px}
+.tests img{width:48px;height:48px;border-radius:50%;object-fit:cover;float:left;margin-right:12px}
+.tests a{color:var(--acc);font-size:13px}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.cta a{padding:16px 28px;border-radius:40px;text-decoration:none;font-size:17px;transition:.3s}
+.cta .wa{background:#25d366;color:#000}.cta .ml{border:1px solid #fff5;color:#fff}
+.cta a:hover{transform:translateY(-3px);box-shadow:0 10px 30px #25d36655}
+@media(max-width:800px){.stats{grid-template-columns:1fr 1fr}#snd{left:8px}.stats b{font-size:40px}}
+@media(max-width:800px){header{grid-template-columns:1fr 1fr}header div:nth-child(2),header div:nth-child(3){display:none}#hero p{font-size:17px;left:20px;bottom:24vh}.btn{display:none}#num{font-size:64px}#ttl{font-size:28px}}
+</style></head><body>
 
-    <header class="topbar">
-      <a class="brand" href="file:///Users/onlymec/Documents/Codex/2026-06-10/can-u-make-protfoloyo-for-me/outputs/lb-edits-portfolio/index.html#top" aria-label="LB Edits home">
-        <span>LB</span>
-        <strong>Edits</strong>
-      </a>
-      <nav aria-label="Portfolio navigation">
-        <a href="file:///Users/onlymec/Documents/Codex/2026-06-10/can-u-make-protfoloyo-for-me/outputs/lb-edits-portfolio/index.html#work">Work</a>
-        <a href="file:///Users/onlymec/Documents/Codex/2026-06-10/can-u-make-protfoloyo-for-me/outputs/lb-edits-portfolio/index.html#skills">Skills</a>
-        <a href="file:///Users/onlymec/Documents/Codex/2026-06-10/can-u-make-protfoloyo-for-me/outputs/lb-edits-portfolio/index.html#process">Process</a>
-        <a href="file:///Users/onlymec/Documents/Codex/2026-06-10/can-u-make-protfoloyo-for-me/outputs/lb-edits-portfolio/index.html#contact">Contact</a>
-      </nav>
-      <a class="nav-cta" href="mailto:lakhanp122e@gmail.com">Hire me</a>
-    </header>
+<header>
+ <div class="logo"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="29" fill="none" stroke="#ff7a1a" stroke-width="2"/><circle cx="32" cy="32" r="22" fill="none" stroke="#2f7bff" stroke-width="1" stroke-dasharray="3 5"/><path d="M18 16v32h12" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M36 16h7a7 7 0 010 14h-7 8a8 8 0 010 16h-8z" fill="none" stroke="#fff" stroke-width="4.5" stroke-linejoin="round"/><path d="M40 8l-6 22h8l-8 26" fill="none" stroke="#ffd60a" stroke-width="2" opacity=".9"/></svg></div>
+ <div><small>Currently:</small>Video Editor · Content Strategist · Retention Specialist</div>
+ <div><small>Based in:</small>India (<span id="clock"></span>)</div>
+ <div><small>Navigation:</small><a href="#" onclick="return go(1)">Work</a><a href="#" onclick="return go(0)">Home</a><a href="mailto:lakhanp122e@gmail.com">Contact</a><a href="https://www.instagram.com/lbmer21/" target="_blank">Instagram</a><br><a class="hire" href="https://wa.me/919624265254" target="_blank">Hire me ↗</a></div>
+</header>
 
-    <main id="top">
-      <section id="work" class="work section-dark">
-        <div class="section-heading reveal is-visible">
-          <p class="eyebrow">Selected work</p>
-          <h2>Projects built for retention, pacing, and growth.</h2>
-        </div>
+<div id="loader"><div class="ring"></div><b class="serif" id="pct">0%</b><small>POWERING UP</small></div>
+<button id="snd"><span class="eq"><i></i><i></i><i></i></span><b id="sndt" style="font-weight:400">Sound on</b></button>
+<a id="fab" target="_blank" href="https://wa.me/919624265254?text=Hi%20Lakhan%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20a%20project"><svg width="22" height="22" viewBox="0 0 24 24" fill="#000"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg><span>Hire me on WhatsApp</span></a>
+<div id="bar"></div><div id="cur"></div>
+<div id="stage"><div id="world"></div></div>
 
-        <article class="project reveal is-visible">
-          <div class="project-visual podcast-a">
-            <span>Podcast</span>
-            <strong>Long Form</strong>
-          </div>
-          <div class="project-copy">
-            <p class="project-kicker">Live With Purpose Show</p>
-            <h3>Story-led podcast edits with clean pacing and visual support.</h3>
-            <p>
-              Edited long-form podcast content with focus on storytelling, audience retention,
-              visual enhancement, motion graphics, and steady pacing.
-            </p>
-            <div class="tools-row"><span>Premiere Pro</span><span>After Effects</span><span>Sound Design</span></div>
-            <div class="video-grid">
-              <a class="video-card" href="https://www.youtube.com/watch?v=s3O5EPTCX7I&amp;t=7s" target="_blank" rel="noreferrer">
-                <img src="./Lakhan _ LB Edits - Video Editing Portfolio_files/hqdefault.jpg" alt="How I Turned My Struggles Into My Mission - Dr. Kayte Susse thumbnail" loading="lazy">
-                <span class="video-play">Watch on YouTube</span>
-                <strong>How I Turned My Struggles Into My Mission - Dr. Kayte Susse</strong>
-                <span class="video-stats"><b>Views</b> Live on YouTube <b>Likes</b> Live on YouTube</span>
-              </a>
-              <a class="video-card" href="https://www.youtube.com/watch?v=6tFdRXXXgi0" target="_blank" rel="noreferrer">
-                <img src="./Lakhan _ LB Edits - Video Editing Portfolio_files/hqdefault(1).jpg" alt="Mindset for Long-Term Success - Tom Malloy thumbnail" loading="lazy">
-                <span class="video-play">Watch on YouTube</span>
-                <strong>Mindset for Long-Term Success - Tom Malloy</strong>
-                <span class="video-stats"><b>Views</b> Live on YouTube <b>Likes</b> Live on YouTube</span>
-              </a>
-            </div>
-          </div>
-        </article>
+<div id="hero">
+ <p>Hi, I'm Lakhan. I edit YouTube videos, podcasts and reels that keep people watching, with <b>power-level</b> energy. Premiere Pro · After Effects · DaVinci Resolve · CapCut. Scroll to fly through the work.</p>
+ <button class="btn" onclick="go(1)">Explore the work <span class="ar">↓</span></button>
+ <h1 class="serif">LB <span>Edits</span></h1>
+</div>
 
-        <article class="project reverse reveal is-visible">
-          <div class="project-visual reels">
-            <span>Reels</span>
-            <strong>High Retention</strong>
-          </div>
-          <div class="project-copy">
-            <p class="project-kicker">CrashQwn / Daniel Alonzo</p>
-            <h3>Fast short-form edits made for rewatches and shares.</h3>
-            <p>
-              Built motivational, creator, and personal-brand reels with tight hooks,
-              punchy captions, motion emphasis, and platform-first pacing.
-            </p>
-            <div class="tools-row"><span>CapCut</span><span>Premiere Pro</span><span>Motion Graphics</span></div>
-            <div class="video-grid instagram-grid">
-              <article class="video-card insta-card">
-                <iframe class="insta-embed-frame" src="./Lakhan _ LB Edits - Video Editing Portfolio_files/embed.html" title="CrashQwn Instagram Reel 01" loading="lazy"></iframe>
-                <a class="video-play" href="https://www.instagram.com/reel/DZIF1U9jJ6B/" target="_blank" rel="noreferrer">Open Reel</a>
-                <strong>CrashQwn - High-Retention Instagram Reel 01</strong>
-                <span class="video-stats"><b>Views</b> Live on Instagram <b>Likes</b> Live on Instagram</span>
-              </article>
-              <article class="video-card insta-card">
-                <iframe class="insta-embed-frame" src="./Lakhan _ LB Edits - Video Editing Portfolio_files/embed(1).html" title="CrashQwn Instagram Reel 02" loading="lazy"></iframe>
-                <a class="video-play" href="https://www.instagram.com/reel/DXt9usZDqxj/" target="_blank" rel="noreferrer">Open Reel</a>
-                <strong>CrashQwn - High-Retention Instagram Reel 02</strong>
-                <span class="video-stats"><b>Views</b> Live on Instagram <b>Likes</b> Live on Instagram</span>
-              </article>
-              <article class="video-card insta-card">
-                <iframe class="insta-embed-frame" src="./Lakhan _ LB Edits - Video Editing Portfolio_files/embed(2).html" title="Daniel Alonzo Instagram Reel 01" loading="lazy"></iframe>
-                <a class="video-play" href="https://www.instagram.com/reel/DZKke7EBHta/" target="_blank" rel="noreferrer">Open Reel</a>
-                <strong>Daniel Alonzo - Personal Brand Instagram Reel 01</strong>
-                <span class="video-stats"><b>Views</b> Live on Instagram <b>Likes</b> Live on Instagram</span>
-              </article>
-              <article class="video-card insta-card">
-                <iframe class="insta-embed-frame" src="./Lakhan _ LB Edits - Video Editing Portfolio_files/embed(3).html" title="Daniel Alonzo Instagram Reel 02" loading="lazy"></iframe>
-                <a class="video-play" href="https://www.instagram.com/reel/DYzknbqipE8/" target="_blank" rel="noreferrer">Open Reel</a>
-                <strong>Daniel Alonzo - Personal Brand Instagram Reel 02</strong>
-                <span class="video-stats"><b>Views</b> Live on Instagram <b>Likes</b> Live on Instagram</span>
-              </article>
-            </div>
-          </div>
-        </article>
+<div id="info"><div id="num" class="serif">001</div><div><div id="ttl" class="serif"></div><div id="cat"></div></div></div>
+<div id="count"><span id="cnt"></span><button onclick="go(0)">↺ Back to home</button></div>
+<section id="end">
+ <h2 class="serif">Let's build something <span>worth watching.</span></h2>
+ <div class="stats">
+  <div class="glass"><b>5.2M</b><small>views on the top video (Dr. David Jockers)</small></div>
+  <div class="glass"><b>25+</b><small>projects in this portfolio</small></div>
+  <div class="glass"><b>10+</b><small>clients &amp; channels</small></div>
+  <div class="glass"><b>4</b><small>tools: Premiere Pro, After Effects, DaVinci Resolve, CapCut</small></div>
+ </div>
+ <div class="tests" id="tests"></div>
+ <p style="font-size:20px;max-width:560px;font-weight:300">YouTube videos, podcasts, reels or shorts — send me your raw footage and I'll turn it into content people finish watching.</p>
+ <div class="cta"><a class="wa" target="_blank" href="https://wa.me/919624265254?text=Hi%20Lakhan%2C%20I%20saw%20your%20portfolio%20and%20want%20to%20discuss%20a%20project">WhatsApp · +91 96242 65254</a><a class="ml" href="mailto:lakhanp122e@gmail.com">lakhanp122e@gmail.com</a><a class="ml" target="_blank" href="https://www.instagram.com/lbmer21/">Instagram ↗</a></div>
+ <p style="color:var(--mut);margin-top:60px;font-size:13px">© 2026 LB Edits — Lakhan</p>
+</section>
+<div id="spacer"></div>
+<nav id="filters"></nav>
 
-        <article class="project reveal is-visible">
-          <div class="project-visual shorts">
-            <span>Shorts</span>
-            <strong>Scroll Stopper</strong>
-          </div>
-          <div class="project-copy">
-            <p class="project-kicker">ATL All Things Local / Aromatix</p>
-            <h3>Shorts optimized for fast attention and watch duration.</h3>
-            <p>
-              Created energetic YouTube Shorts with sharp openings, compact storytelling,
-              visual rhythm, and strong retention structure.
-            </p>
-            <div class="tools-row"><span>YouTube Shorts</span><span>Captions</span><span>Retention</span></div>
-            <div class="video-grid">
-              <a class="video-card short-card" href="https://www.youtube.com/shorts/7unCybf1-v4" target="_blank" rel="noreferrer">
-                <img src="./Lakhan _ LB Edits - Video Editing Portfolio_files/hqdefault(2).jpg" alt="ATL All Things Local YouTube Short thumbnail" loading="lazy">
-                <span class="video-play">Watch Short</span>
-                <strong>ATL All Things Local - YouTube Short</strong>
-                <span class="video-stats"><b>Views</b> Live on YouTube <b>Likes</b> Live on YouTube</span>
-              </a>
-              <a class="video-card short-card" href="https://youtube.com/shorts/-oKGAcIEPcA" target="_blank" rel="noreferrer">
-                <img src="./Lakhan _ LB Edits - Video Editing Portfolio_files/hqdefault(3).jpg" alt="Aromatix YouTube Short thumbnail" loading="lazy">
-                <span class="video-play">Watch Short</span>
-                <strong>Aromatix - YouTube Short</strong>
-                <span class="video-stats"><b>Views</b> Live on YouTube <b>Likes</b> Live on YouTube</span>
-              </a>
-            </div>
-          </div>
-        </article>
+<div id="modal" onclick="if(event.target==this)closeM()"><button class="x" onclick="closeM()">×</button><div class="box"><div id="mmedia"></div><h2 class="serif" id="mt"></h2><p id="mc"></p></div></div>
 
-        <article class="project reverse reveal is-visible">
-          <div class="project-visual finance">
-            <span>YouTube</span>
-            <strong>Finance</strong>
-          </div>
-          <div class="project-copy">
-            <p class="project-kicker">Wall Street Mastermind</p>
-            <h3>Educational market content with structure and clarity.</h3>
-            <p>
-              Edited banking, finance, and market-update videos with audience retention,
-              visual storytelling, pacing, graphics, and clear content delivery.
-            </p>
-            <div class="tools-row"><span>Educational</span><span>Graphics</span><span>Color Grade</span></div>
-            <div class="video-grid">
-              <a class="video-card" href="https://youtu.be/7kfvEzgBbL0" target="_blank" rel="noreferrer">
-                <img src="./Lakhan _ LB Edits - Video Editing Portfolio_files/hqdefault(4).jpg" alt="How to calculate WACC thumbnail" loading="lazy">
-                <span class="video-play">Watch on YouTube</span>
-                <strong>How to calculate WACC? Weighted Average Cost of Capital Explained</strong>
-                <span class="video-stats"><b>Views</b> Live on YouTube <b>Likes</b> Live on YouTube</span>
-              </a>
-              <a class="video-card" href="https://youtu.be/eKe0hbUtZwA" target="_blank" rel="noreferrer">
-                <img src="./Lakhan _ LB Edits - Video Editing Portfolio_files/hqdefault(5).jpg" alt="Wall Street Mastermind finance video thumbnail" loading="lazy">
-                <span class="video-play">Watch on YouTube</span>
-                <strong>Wall Street Mastermind - Finance &amp; Market Update</strong>
-                <span class="video-stats"><b>Views</b> Live on YouTube <b>Likes</b> Live on YouTube</span>
-              </a>
-            </div>
-          </div>
-        </article>
-      </section>
+<script>
+const $=id=>document.getElementById(id);
+/* ====== NAYA PROJECT ADD KARNA HO TO YAHAN EK LINE JODO ======
+   YouTube: y:"VIDEO_ID"  (thumbnail apne aap aayega)
+   Instagram: ig:"reel link", img:"assets/reel-N.jpg" (reel ka screenshot assets folder me rakho)
+   f:1 = featured,  v:"views" sirf jab asli ho */
+const PROJECTS=[
+ {t:"If I Had Only 7 Days to Kill Cortisol Belly, I'd Do THIS",cl:"Dr. David Jockers",c:"Health & Wellness",y:"I115pr36Ywo",v:"5.2M views",f:1},
+ {t:"If I Had Only 7 Days To Kill Visceral Fat, I'd Do THIS",cl:"Dr. David Jockers",c:"Health & Wellness",y:"6-F7pPROlEQ"},
+ {t:"6 Sweet and Sexiest Clones For the Fall and Winter",cl:"Aromatix",c:"Product & Commercial",y:"enPomRkkZhg"},
+ {t:"You Can't Make This Up…",cl:"Aromatix",c:"Product & Commercial",y:"yui4ikFcfJ4"},
+ {t:"Music Video",cl:"Danny (DJ)",c:"Music & Events",y:"uSStRE6uuuY"},
+ {t:"Daniel Alonzo — Project 1",cl:"Daniel Alonzo",c:"Motivational & Business",y:"DLe4qQG5hLY"},
+ {t:"Daniel Alonzo — Project 2",cl:"Daniel Alonzo",c:"Motivational & Business",y:"GtXbmdHpP4Q"},
+ {t:"Daniel Alonzo — Project 3",cl:"Daniel Alonzo",c:"Motivational & Business",y:"6jPq6e0Ydys"},
+ {t:"Documentary Video",cl:"Mighty Monk",c:"Documentary",y:"TbmpFQzAA04"},
+ {t:"Fitness — Project 1",cl:"Fitness & Gym",c:"Fitness & Gym",y:"_EKq35gq7Mc"},
+ {t:"Fitness — Project 2",cl:"Fitness & Gym",c:"Fitness & Gym",y:"RhOjsyPzCeY"},
+ {t:"Fitness — Project 3",cl:"Fitness & Gym",c:"Fitness & Gym",y:"CoUmgADYzQU"},
+ {t:"How I Turned My Struggles Into My Mission",cl:"Dr. Kayte Susse",c:"Podcast Editing",y:"s3O5EPTCX7I"},
+ {t:"Mindset for Long-Term Success",cl:"Tom Malloy",c:"Podcast Editing",y:"6tFdRXXXgi0"},
+ {t:"Wall Street Mastermind — Episode 1",cl:"Wall Street Mastermind",c:"Podcast Editing",y:"7kfvEzgBbL0"},
+ {t:"Wall Street Mastermind — Episode 2",cl:"Wall Street Mastermind",c:"Podcast Editing",y:"eKe0hbUtZwA"},
+ {t:"ATL (All Things Local)",cl:"ATL",c:"Short-form",y:"7unCybf1-v4",s:1},
+ {t:"Aromatix Short",cl:"Aromatix",c:"Short-form",y:"-oKGAcIEPcA",s:1},
+ {t:"CrashQwn — Reel 1",cl:"CrashQwn",c:"Short-form",ig:"https://www.instagram.com/reel/DZIF1U9jJ6B/",img:"assets/reel-1.jpg"},
+ {t:"CrashQwn — Reel 2",cl:"CrashQwn",c:"Short-form",ig:"https://www.instagram.com/reel/DXt9usZDqxj/",img:"assets/reel-2.jpg"},
+ {t:"Daniel Alonzo — Reel 1",cl:"Daniel Alonzo",c:"Short-form",ig:"https://www.instagram.com/reel/DZKke7EBHta/",img:"assets/reel-3.jpg"},
+ {t:"Daniel Alonzo — Reel 2",cl:"Daniel Alonzo",c:"Short-form",ig:"https://www.instagram.com/reel/DYzknbqipE8/",img:"assets/reel-4.jpg"},
+ {t:"RealprettyNu — Reel 1",cl:"RealprettyNu",c:"Short-form",ig:"https://www.instagram.com/reel/Dfaaa8OPW2p/",img:"assets/reel-5.jpg"},
+ {t:"Instagram Reel 1",cl:"LB Edits",c:"Short-form",ig:"https://www.instagram.com/reel/DZIXDIqvDTz/",img:"assets/reel-6.jpg"},
+ {t:"Instagram Reel 2",cl:"LB Edits",c:"Short-form",ig:"https://www.instagram.com/reel/DVrrgiyD_tk/",img:"assets/reel-7.jpg"},
+];
+const COLORS=['#ff7a1a','#2f7bff','#e63946','#ffd60a','#9b5de5','#2ec4b6'];
+const GAP=1400, world=document.getElementById('world');
+let LIST=PROJECTS, cards=[], last=-1;
+const IGT=`<div class="igt"><span>◎</span>Instagram Reel</div>`;
+const thumb=p=>p.img?`<img src="${p.img}" alt="${p.t}" loading="lazy" onerror="this.outerHTML=IGT">`
+ :p.y?`<img src="https://i.ytimg.com/vi/${p.y}/hqdefault.jpg" alt="${p.t}" loading="lazy">`:IGT;
+function build(){
+ cards.forEach(c=>c.el.remove());
+ cards=LIST.map((p,i)=>{
+  const el=document.createElement('div');el.className='card';
+  const w=innerWidth<800?280:520;el.style.width=w+'px';el.style.height=w*.5625+'px';
+  el.style.background=`linear-gradient(135deg,${COLORS[i%6]},#111)`;
+  el.innerHTML=thumb(p)+(p.v?`<b class="badge">★ ${p.v}</b>`:'')+`<div class="cap"><small>${p.cl} · ${p.c}</small>${p.t}</div><div class="play">${p.ig?'↗':'▶'}</div>`;
+  const x=(i%2?1:-1)*(innerWidth<800?30:160), y=(i%3-1)*60, z=-(i+1)*GAP;
+  el.onclick=()=>openM(p);el.onmouseenter=blip;world.appendChild(el);return {el,x,y,z,w};
+ });
+ $('spacer').style.height=(LIST.length*90+200)+'vh';
+ $('cnt').textContent=LIST.length+' works';last=-1;
+}
+/* ====== TESTIMONIALS: client ka ASLI feedback aaye to yahan jodo ======
+ {q:"client ke apne words",n:"Naam",r:"Channel / role",img:"assets/client.jpg",link:"https://youtube.com/@channel"} */
+const TESTIMONIALS=[];
+$('tests').innerHTML=TESTIMONIALS.map(x=>`<div class="glass">${x.img?`<img src="${x.img}" alt="${x.n}">`:''}<b>${x.n}</b><br><small style="color:var(--mut)">${x.r}</small><p style="clear:both;margin-top:14px;line-height:1.5">"${x.q}"</p>${x.link?`<a href="${x.link}" target="_blank">Channel ↗</a>`:''}</div>`).join('');
+// loader
+(()=>{let p=0;const iv=setInterval(()=>{p=Math.min(100,p+Math.ceil(Math.random()*9));$('pct').textContent=p+'%';if(p>=100){clearInterval(iv);setTimeout(()=>$('loader').classList.add('done'),250)}},45)})();
+// sound (Web Audio, koi file nahi chahiye)
+let AC=null,SND=false;
+function setSnd(v){SND=v;if(!AC)AC=new (window.AudioContext||window.webkitAudioContext)();AC.resume();$('snd').classList.toggle('on',v);$('sndt').textContent=v?'Sound: ON':'Sound on';if(v)ting()}
+$('snd').onclick=e=>{e.stopPropagation();setSnd(!SND)};
+addEventListener('pointerdown',function f(){if(!AC)setSnd(true);removeEventListener('pointerdown',f)},{once:true});
+function blip(){if(!SND)return;const o=AC.createOscillator(),g=AC.createGain();o.type='triangle';o.frequency.setValueAtTime(600,AC.currentTime);o.frequency.exponentialRampToValueAtTime(1200,AC.currentTime+.08);g.gain.setValueAtTime(.06,AC.currentTime);g.gain.exponentialRampToValueAtTime(.001,AC.currentTime+.15);o.connect(g).connect(AC.destination);o.start();o.stop(AC.currentTime+.15)}
+function whoosh(){if(!SND)return;const d=.5,b=AC.createBuffer(1,AC.sampleRate*d,AC.sampleRate),c=b.getChannelData(0);for(let i=0;i<c.length;i++)c[i]=(Math.random()*2-1)*Math.sin(Math.PI*i/c.length);
+ const s=AC.createBufferSource(),f=AC.createBiquadFilter(),g=AC.createGain();s.buffer=b;f.type='bandpass';f.frequency.setValueAtTime(300,AC.currentTime);f.frequency.exponentialRampToValueAtTime(3000,AC.currentTime+d);g.gain.value=.25;s.connect(f).connect(g).connect(AC.destination);s.start()}
+function ting(){if(!SND)return;[880,1320].forEach((fr,i)=>{const o=AC.createOscillator(),g=AC.createGain();o.frequency.value=fr;g.gain.setValueAtTime(.12,AC.currentTime+i*.06);g.gain.exponentialRampToValueAtTime(.001,AC.currentTime+i*.06+.5);o.connect(g).connect(AC.destination);o.start(AC.currentTime+i*.06);o.stop(AC.currentTime+i*.06+.5)})}
+function stars(el){const r=el.getBoundingClientRect();for(let i=0;i<14;i++){const s=document.createElement('span');s.className='star';s.textContent=i%3?'✦':'★';
+ s.style.left=r.left+Math.random()*r.width+'px';s.style.top=r.top+Math.random()*r.height+'px';s.style.fontSize=8+Math.random()*16+'px';
+ s.style.setProperty('--dx',(Math.random()-.5)*120+'px');s.style.setProperty('--dy',(Math.random()-.5)*120+'px');document.body.appendChild(s);setTimeout(()=>s.remove(),1300)}}
+// category filters
+const CATS=['All',...new Set(PROJECTS.map(p=>p.c))];
+$('filters').innerHTML=CATS.map(c=>`<button class="${c=='All'?'on':''}">${c}</button>`).join('');
+$('filters').onclick=e=>{if(e.target.tagName!='BUTTON')return;
+ [...$('filters').children].forEach(b=>b.classList.toggle('on',b==e.target));
+ const c=e.target.textContent;LIST=c=='All'?PROJECTS:PROJECTS.filter(p=>p.c==c);build();go(1)};
+// floating "dust" tiles = depth feel
+const N=innerWidth<800?250:600;
+for(let i=0;i<N;i++){const d=document.createElement('div');d.className='dot';
+ const s=3+Math.random()*14;d.style.width=s+'px';d.style.height=s*.7+'px';
+ d.style.background=COLORS[i%6];d.style.opacity=.15+Math.random()*.6;
+ const r=200+Math.random()*1400,a=Math.random()*6.28;
+ d.dataset.p=[Math.cos(a)*r,Math.sin(a)*r*.7,-Math.random()*GAP*(PROJECTS.length+1)];world.appendChild(d);}
+const dots=[...document.querySelectorAll('.dot')].map(d=>({d,p:d.dataset.p.split(',').map(Number)}));
 
-      <section id="skills" class="skills reveal is-visible">
-        <div>
-          <p class="eyebrow">Tools</p>
-          <h2>Built with the editor stack creators expect.</h2>
-        </div>
-        <div class="chip-grid">
-          <span>Adobe Premiere Pro</span>
-          <span>Adobe After Effects</span>
-          <span>DaVinci Resolve</span>
-          <span>CapCut</span>
-        </div>
-      </section>
+const num=$('num'),ttl=$('ttl'),cat=$('cat'),modal=$('modal'),mmedia=$('mmedia'),mt=$('mt'),mc=$('mc'),clock=$('clock'),bar=$('bar'),cur=$('cur');
+let cam=0,target=0,mx=0,my=0,t=0;
+addEventListener('pointermove',e=>{cur.style.left=e.clientX+'px';cur.style.top=e.clientY+'px'});
+addEventListener('scroll',()=>{const max=document.body.scrollHeight-innerHeight;target=scrollY/max*GAP*(LIST.length+1.2)});
+addEventListener('mousemove',e=>{mx=(e.clientX/innerWidth-.5);my=(e.clientY/innerHeight-.5)});
+const hero=document.getElementById('hero'),info=document.getElementById('info'),cnt=document.getElementById('count');
+build();
 
-      <section class="skill-cloud section-dark reveal is-visible">
-        <p class="eyebrow">Core skills</p>
-        <div>
-          <span>Retention Editing</span>
-          <span>Storytelling</span>
-          <span>Motion Graphics</span>
-          <span>Color Grading</span>
-          <span>Sound Design</span>
-          <span>Thumbnail Design</span>
-          <span>YouTube Optimization</span>
-          <span>Short-Form Strategy</span>
-          <span>Podcast Editing</span>
-          <span>Social Media Content</span>
-        </div>
-      </section>
-
-      <section id="process" class="process">
-        <div class="section-heading reveal is-visible">
-          <p class="eyebrow">Why work with me?</p>
-          <h2>Most editors focus on transitions. I focus on results.</h2>
-        </div>
-        <div class="process-grid">
-          <div class="process-card reveal is-visible">
-            <span>01</span>
-            <h3>Hook first</h3>
-            <p>I shape the opening seconds so viewers understand the value and stay curious.</p>
-          </div>
-          <div class="process-card reveal is-visible">
-            <span>02</span>
-            <h3>Rhythm and clarity</h3>
-            <p>I cut dead space, strengthen story flow, and keep the pace matched to the platform.</p>
-          </div>
-          <div class="process-card reveal is-visible">
-            <span>03</span>
-            <h3>Visual proof</h3>
-            <p>I use graphics, captions, zooms, sound, and color to support meaning, not distract from it.</p>
-          </div>
-          <div class="process-card reveal is-visible">
-            <span>04</span>
-            <h3>Platform ready</h3>
-            <p>I edit for YouTube, Shorts, Reels, TikTok, podcasts, business content, and personal brands.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="styles section-dark reveal is-visible">
-        <p class="eyebrow">Editing styles</p>
-        <h2>Ali Abdaal, Iman Gadzhi, Alex Hormozi, documentaries, podcasts, real estate, business, finance, and minimalist talking-head videos.</h2>
-      </section>
-
-      <section class="hero">
-        <div class="hero-media" aria-hidden="true">
-          <div class="frame frame-a">
-            <div class="timeline">
-              <span></span><span></span><span></span><span></span>
-            </div>
-            <div class="preview-bars"></div>
-          </div>
-          <div class="frame frame-b">
-            <span class="play-icon"></span>
-            <p>Retention graph: rising</p>
-          </div>
-          <div class="floating-note">every second earns attention</div>
-        </div>
-
-        <div class="hero-copy reveal is-visible">
-          <p class="eyebrow">Video Editor / Content Strategist / Retention Specialist</p>
-          <h1>
-            <span>Turn Raw</span>
-            <span>Footage Into</span>
-            <span>Watch Time.</span>
-          </h1>
-          <p class="intro">
-            I am Lakhan, also known as LB Edits. I create content designed to capture attention,
-            increase retention, and drive results across YouTube, Instagram, TikTok, and social platforms.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="file:///Users/onlymec/Documents/Codex/2026-06-10/can-u-make-protfoloyo-for-me/outputs/lb-edits-portfolio/index.html#work">View projects</a>
-            <a class="button ghost" href="mailto:lakhanp122e@gmail.com">Start a project</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="identity section-dark reveal is-visible">
-        <div class="section-number">01</div>
-        <div>
-          <p class="eyebrow">Who am I?</p>
-          <h2>I do not just edit videos. I engineer attention.</h2>
-        </div>
-        <p>
-          Every cut, transition, sound effect, caption, graphic, and visual beat is placed with a reason:
-          to keep viewers engaged from start to finish. With 2+ years of professional editing experience,
-          I have worked with creators, podcasts, agencies, businesses, and brands.
-        </p>
-      </section>
-
-      <section class="metrics reveal is-visible" aria-label="Portfolio highlights">
-        <div>
-          <strong>2+</strong>
-          <span>Years editing professionally</span>
-        </div>
-        <div>
-          <strong>4</strong>
-          <span>Main editing tools mastered</span>
-        </div>
-        <div>
-          <strong>360</strong>
-          <span>Strategy from hook to upload</span>
-        </div>
-      </section>
-
-      <section id="contact" class="contact">
-        <div class="contact-panel reveal is-visible">
-          <p class="eyebrow">Ready to edit, deliver, repeat?</p>
-          <h2>Let us turn your raw footage into content that performs.</h2>
-          <div class="contact-actions">
-            <a class="button primary" href="mailto:lakhanp122e@gmail.com">lakhanp122e@gmail.com</a>
-            <a class="button ghost" href="https://www.instagram.com/lbmer21/" target="_blank" rel="noreferrer">@lbmer21</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <span>Lakhan / LB Edits</span>
-      <span>Video Editing. Strategy. Retention.</span>
-    </footer>
-
-    <script src="./Lakhan _ LB Edits - Video Editing Portfolio_files/script.js"></script>
-  
-
+function frame(){
+ cam+=(target-cam)*.08;t+=.016;
+ const mxs=document.body.scrollHeight-innerHeight;bar.style.width=(mxs?scrollY/mxs*100:0)+'%';
+ const ox=mx*-120,oy=my*-80;
+ cards.forEach(c=>{const z=c.z+cam;
+  const f=Math.sin(t*1.2+c.z)*14;
+  c.el.style.transform=`translate3d(${c.x-c.w/2+ox}px,${c.y-c.w*.33+oy+f}px,${z}px) rotateY(${mx*-12}deg) rotateX(${my*8}deg)`;
+  c.el.style.opacity=z>500?0:Math.min(1,(z+GAP*3)/GAP);c.el.style.pointerEvents=z>300?'none':'auto';});
+ dots.forEach(o=>{let z=o.p[2]+cam;o.d.style.transform=`translate3d(${o.p[0]+ox*.5+Math.cos(t+o.p[2])*20}px,${o.p[1]+oy*.5+Math.sin(t*.8+o.p[0])*25}px,${z}px) rotate(${t*40+o.p[1]}deg)`;o.d.style.display=z>800?'none':'block'});
+ const idx=Math.round(cam/GAP)-1;
+ hero.style.opacity=Math.max(0,1-cam/500);
+ const endOn=cam>GAP*(LIST.length+.7);$('end').classList.toggle('on',endOn);const show=cam>GAP*.5&&!endOn;info.style.opacity=cnt.style.opacity=show?1:0;
+ if(idx!==last&&idx>=0&&idx<LIST.length){last=idx;info.classList.remove('flash');void info.offsetWidth;info.classList.add('flash');cards.forEach((c,j)=>c.el.classList.toggle('focus',j==idx));if(cam>GAP*.5){whoosh();setTimeout(()=>stars(cards[idx].el),150)}num.textContent=String(idx+1).padStart(3,'0');ttl.textContent=LIST[idx].t;cat.textContent=LIST[idx].cl+' · '+LIST[idx].c}
+ requestAnimationFrame(frame);
+}
+frame();
+function go(i){const max=document.body.scrollHeight-innerHeight;scrollTo({top:i?max/(LIST.length+1.2):0,behavior:'smooth'});return false}
+function openM(p){ting();if(p.ig){open(p.ig,'_blank','noopener');return}
+ mmedia.innerHTML=`<div class="vid ${p.s?'sh':''}"><iframe src="https://www.youtube.com/embed/${p.y}?autoplay=1&rel=0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe></div>`;
+ mt.textContent=p.t;mc.innerHTML=`${p.cl} · ${p.c}${p.v?' · <b style=color:var(--acc)>'+p.v+'</b>':''} · <a href="https://youtu.be/${p.y}" target="_blank" style=color:#fff>YouTube par dekho ↗</a>`;modal.classList.add('on')}
+function closeM(){modal.classList.remove('on');mmedia.innerHTML=''}
+addEventListener('keydown',e=>{if(e.key=='Escape')closeM();
+ const step=(document.body.scrollHeight-innerHeight)/(LIST.length+1.2);
+ if(e.key=='ArrowDown'||e.key=='ArrowRight'){e.preventDefault();scrollBy({top:step,behavior:'smooth'})}
+ if(e.key=='ArrowUp'||e.key=='ArrowLeft'){e.preventDefault();scrollBy({top:-step,behavior:'smooth'})}});
+setInterval(()=>clock.textContent=new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit',timeZone:'Asia/Kolkata'}),1000);
+</script>
 </body></html>
